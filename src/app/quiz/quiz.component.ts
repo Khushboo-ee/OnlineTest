@@ -13,6 +13,10 @@ export class QuizComponent implements OnInit {
   ques4: string = "";
   ques5: string = "";
   ques6: string = "";
+  ques7: string = "";
+  ques8: string = "";
+  ques9: string = "";
+  ques10: string = "";
   score: number = 0;
   mycss:string = "";
   msg: string = "";
@@ -24,19 +28,71 @@ export class QuizComponent implements OnInit {
    
       if (this.ques1 == "q1-opt2") {
         this.score = this.score+10;
-        //this.msg = "Your Score is: "+ this.score;
-      } else {
-        this.score= this.score + 0;
-        //this.msg = "Your Score is: "+ this.score;
       }
+      //  else {
+      //   this.score= this.score + 0;
+      // }
       if (this.ques2 == "q2-opt4") {
         this.score = this.score+10;
-        //this.msg = "Your Score is: "+ this.score;
+      } 
+      // else {
+      //   this.score= this.score + 0;
+      // }
+      if (this.ques3 == "q3-opt2") {
+        this.score = this.score+10;
+      } 
+      // else {
+      //   this.score= this.score + 0;
+      // }
+      if (this.ques4 == "q4-opt3") {
+        this.score = this.score+10;
+      } 
+      // else {
+      //   this.score= this.score + 0;
+      // }
+      if (this.ques5 == "q5-opt4") {
+        this.score = this.score+10;
+      } 
+      // else {
+      //   this.score= this.score + 0;
+      // }
+      if (this.ques6 == "q6-opt2") {
+        this.score = this.score+10;
+      } 
+      // else {
+      //   this.score= this.score + 0;
+      // }
+      if (this.ques7 == "q7-opt1") {
+        this.score = this.score+10;
+      } 
+      // else {
+      //   this.score= this.score + 0;
+      // }
+      if (this.ques8 == "q8-opt2") {
+        this.score = this.score+10;
+      } 
+      // else {
+      //   this.score= this.score + 0;
+      // }
+      if (this.ques9 == "q9-opt4") {
+        this.score = this.score+10;
+      } 
+      // else {
+      //   this.score= this.score + 0;
+      // }
+      if (this.ques10 == "q10-opt1") {
+        this.score = this.score+10;
+      } 
+      // else {
+      //   this.score= this.score + 0;
+      // }
+   
+      this.msg = "Your Score is: "+ this.score;
+      if (this.score>=50) {
+        this.mycss = "css1";
       } else {
-        this.score= this.score + 0;
-        //this.msg = "Your Score is: "+ this.score;
+        this.mycss = "css2";
       }
-    this.msg = "Your Score is: "+ this.score;
   }
   ngOnInit(): void {
   }
